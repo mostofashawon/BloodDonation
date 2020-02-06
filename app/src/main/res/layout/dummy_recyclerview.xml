@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="@color/Primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08">
+
+
+        <ImageView
+            android:paddingTop="5dp"
+            android:id="@+id/Dummy_Doner"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/lg_doner_" />
+
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingLeft="70dp"
+            android:id="@+id/Dummy_Doner_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Dummy_Name"
+            android:textSize="25sp"
+            android:textColor="@color/Dark"/>
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:paddingTop="10dp"
+            android:id="@+id/Dummy_Phone"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/lg_phone" />
+
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingLeft="70dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/Dummy_DonerPhone_No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Dummy_phone_No"
+            android:textSize="25sp"
+            android:textColor="@color/Dark"/>
+
+        <ImageView
+            android:id="@+id/Dummy_Blood"
+            android:layout_marginTop="100dp"
+            android:paddingTop="8dp"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            app:srcCompat="@drawable/welcome_screen" />
+
+        <TextView
+            android:id="@+id/Dummy_DonerBlood_Group"
+            android:layout_marginTop="100dp"
+            android:paddingTop="11dp"
+            android:paddingLeft="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Dummy_Group"
+            android:textSize="25sp"
+            android:textColor="@color/Dark"/>
+
+        <ImageView
+            android:id="@+id/Dummy_Division"
+            android:layout_marginTop="147dp"
+            android:paddingTop="10dp"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/lg_location" />
+
+        <TextView
+            android:id="@+id/Dummy_Doner_Division"
+            android:layout_marginTop="147dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Dummy_Division"
+            android:textSize="25sp"
+            android:textColor="@color/Dark"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

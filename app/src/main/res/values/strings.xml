@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Get Doner</string>
+
+    \\ Wel Come Screen \\
+
+    <string name="App_Title"> Get Doner </string>
+
+    <string name="Bottom_Title1"> When we are together </string>
+
+    <string name="Bottom_Title2"> We are stronger </string>
+
+    \\ Login Screen \\
+
+    <string name="LoginTitle"> Login </string>
+
+    <string name="LoginBottom_Text1"> Are you not registered ? </string>
+
+    <string name="LoginBottom_Text2"> Click here to Sign up </string>
+
+    \\ Confirmation Screen \\
+
+    <string name="Confirmation_Text"> By signing up you will be\n
+                                       listed to the doner club </string>
+
+    <string name="Confirmation_Text1">  Are you agree this term? </string>
+    <string name="YesButton"> Yes </string>
+    <string name="NoButton"> No </string>
+
+    \\ SignUp Screen \\
+
+    <string name="SignUp_Title"> Sign Up </string>
+    <string-array name="BloodGroup">
+
+        <item>  O Positive  </item>
+        <item>  O Negative  </item>
+        <item>  A Positive  </item>
+        <item>  A Negative  </item>
+        <item>  B Positive  </item>
+        <item>  B Negative  </item>
+        <item>  AB Positive  </item>
+        <item>  AB Negative  </item>
+
+    </string-array>
+
+    <string-array name="Division_Name">
+
+        <item> Dhaka </item>
+        <item> Khulna </item>
+        <item> Rajshahi </item>
+        <item> Barisal </item>
+        <item> Rangpur </item>
+        <item> Sylhet </item>
+        <item> Mymensingh </item>
+        <item> Chittagong </item>
+
+    </string-array>
+
+    <string name="yesDecesion"> Yes </string>
+    <string name="noDecesion"> No </string>
+    <string name="go"> Go </string>
+    <string name="signout"> Signout </string>
+
+    <string name="Dummy_phone_No"> 01912195245 </string>
+    <string name="Dummy_Name"> Golam Mostofa Shawon  </string>
+    <string name="Dummy_Group"> B Positive  </string>
+    <string name="Dummy_Division"> Dhaka </string>
+
+</resources>
