@@ -3,6 +3,9 @@
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.blooddonation.Main">
 
+    <uses-permission-sdk-23 android:name="android.permission.SEND_SMS"></uses-permission-sdk-23>
+
+
     <dist:module dist:instant="true" />
 
     <application
@@ -12,6 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="com.blooddonation.View.Message"></activity>
         <activity android:name="com.blooddonation.View.DonerList" />
         <activity android:name="com.blooddonation.Presenter.DonerGroup" />
         <activity android:name="com.blooddonation.Model.SignUp" />

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Primary"
+    tools:context="com.blooddonation.View.Message">
+
+    <ImageButton
+        android:id="@+id/BackButtonId"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/Dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045"
+        app:srcCompat="@drawable/lg_back" />
+
+
+    <Button
+        android:id="@+id/SignOutButton_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="5dp"
+        android:background="#AD454D"
+        android:text="@string/signout"
+        android:textColor="@color/Primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <EditText
+        android:id="@+id/msgphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Phone No."
+        android:paddingLeft="5dp"
+        android:textColorHint="@color/Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BackButtonId" />
+
+    <EditText
+        android:id="@+id/msgtext"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="250dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Message"
+        android:inputType="textMultiLine"
+        android:paddingLeft="5dp"
+        android:textColorHint="@color/Dark"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msgphone" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/Dark"
+        android:text="Send"
+        android:textColor="@color/Primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msgtext"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,6 +20,17 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
 
     private Context Get_Context;
     private List<Information> Get_List;
+    ClickListner clickListner;
+
+    public interface ClickListner {
+
+        void onItemListner(int postion, View v);
+    }
+
+    public void setOnClick(ClickListner clickListner){
+
+        this.clickListner=clickListner;
+    }
 
     public CustomAdapter(Context get_Context, List<Information> get_List) {
         Get_Context = get_Context;
@@ -59,7 +70,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
         return Get_List.size();
     }
 
-    public class CustomViewHolder extends RecyclerView.ViewHolder {
+    public class CustomViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         ImageView  Doner_Name,Doner_Phone,Doner_Group,Doner_Division;
         TextView DonerName,DonerPhone,DonerGroup,DonerDivision;
@@ -76,6 +87,16 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
             DonerPhone =(TextView) itemView.findViewById(R.id.Dummy_DonerPhone_No);
             DonerGroup =(TextView) itemView.findViewById(R.id.Dummy_DonerBlood_Group);
             DonerDivision =(TextView) itemView.findViewById(R.id.Dummy_Doner_Division);
+
+            itemView.setOnClickListener(this);
+
+
+        }
+
+        @Override
+        public void onClick(View v) {
+
+            clickListner.onItemListner(getAdapterPosition(),itemView);
 
         }
     }

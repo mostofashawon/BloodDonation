@@ -7,8 +7,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
 import com.blooddonation.Adapter.CustomAdapter;
 import com.blooddonation.Main.Login;
 import com.blooddonation.Main.R;
@@ -52,6 +56,15 @@ public class DonerList extends AppCompatActivity implements View.OnClickListener
         recyclerView.setAdapter(customAdapter);
         recyclerView.hasFixedSize();
         recyclerView.setLayoutManager(linearLayoutManager);
+
+        customAdapter.setOnClick(new CustomAdapter.ClickListner() {
+            @Override
+            public void onItemListner(int postion, View v) {
+
+                DonerList_Intent = new Intent(DonerList.this,Message.class);
+                startActivity(DonerList_Intent);
+            }
+        });
 
         BackButton.setOnClickListener(this);
         SignOutButton.setOnClickListener(this);
