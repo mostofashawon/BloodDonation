@@ -2,6 +2,6 @@
 
 Introduction 
 
-This application design using MVP architecture design pattern.
+This application is design using MVP architecture design pattern.
 Also supported for different screensize.
 
