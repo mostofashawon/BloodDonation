@@ -30,3 +30,7 @@ Also supported for different screensize.
 ### DonerList
 
 ![](https://github.com/mostofashawon/BloodDonationApp/blob/master/Images/DonerList.png)
+
+### Message
+
+![](https://github.com/mostofashawon/BloodDonationApp/blob/master/Images/Message.png)
