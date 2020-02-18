@@ -7,4 +7,6 @@ Also supported for different screensize.
 
 AppLication UserInterface 
 
+![WelcomeScreen](https://github.com/mostofashawon/BloodDonationApp/blob/master/Images/Welcome.png)
+
 
