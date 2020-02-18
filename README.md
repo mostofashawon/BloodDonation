@@ -18,3 +18,7 @@ Also supported for different screensize.
 ### Confirmation
 
 ![](https://github.com/mostofashawon/BloodDonationApp/blob/master/Images/Confirmation.png)
+
+### Signup
+
+![](https://github.com/mostofashawon/BloodDonationApp/blob/master/Images/SignUp.png)
